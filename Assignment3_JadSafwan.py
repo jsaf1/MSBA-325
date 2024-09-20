@@ -61,6 +61,7 @@ fig1 = px.pie(total_energy,
 # Display the pie chart
 st.plotly_chart(fig1)
 
+st.write("Assuming 'OtherEnergy' accounts for non-green energy sources, when we focus on the selected energy types, it becomes evident that Solar Energy overwhelmingly constitutes the primary source, with much smaller contributions from Hydropower and Wind Energy.", unsafe_allow_html=True)
 
 
 
@@ -83,4 +84,11 @@ fig2 = px.bar(filtered_data,
 st.plotly_chart(fig2)
 
 
+st.write("<b>Bar Chart Analysis:</b>", unsafe_allow_html=True)
+st.write("""
+    - The results from the Pie Chart are further broken down in this bar chart, showing the distribution of energy sources across different regions.
+    - <b>Akkar</b> and <b>Bint Jbeil Governorates</b> stand out with the most diverse energy portfolios, incorporating multiple alternative energy sources.
+    - Across most regions, <b>Solar Energy</b> emerges as the dominant alternative energy source.
+    - The adoption of <b>Hydropower</b> and <b>Wind Energy</b> remains limited in most regions.
+    """, unsafe_allow_html=True)
 
